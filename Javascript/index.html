@@ -28,16 +28,30 @@
     <div id="app"></div>
     <h2>Funciones</h2>
     <script>
-      //Function Declaration
-      function saludar(nombre) {
-        console.log("bienvenido " + nombre);
+      //Funciones con Parametros
+      function actividad(
+        nombre = "Walter White",
+        actividad = "Enseñar Quimica"
+      ) {
+        console.log(
+          `La persona ${nombre}, esta realizando la actividad ${actividad}`
+        );
       }
-      saludar("juan");
-      //Function Expression
-      const cliente = function (nombreCliente) {
-        console.log("Mostrando datos del cliete: " + nombreCliente);
+
+      const actividad2 = function (
+        nombre = "Walter White",
+        actividad = "Enseñar Quimica"
+      ) {
+        console.log(
+          `La persona ${nombre}, esta realizando la actividad ${actividad}`
+        );
       };
-      cliente("juan");
+
+      actividad();
+      actividad("Ramsses", "Aprendiendo React");
+
+      actividad2("Ramsses", "Aprendiendo React");
+      actividad2();
     </script>
   </body>
 </html>
