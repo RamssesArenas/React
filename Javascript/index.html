@@ -26,17 +26,18 @@
   <body>
     <h1>Introducción / Recordatorio JavaScript</h1>
     <div id="app"></div>
-    <h2>Template literals</h2>
-    <p>
-      Las plantillas literales son cadenas literales que habilitan el uso de
-      expresiones incrustadas. Con ellas, es posible utilizar cadenas de
-      caracteres de más de una línea, y funcionalidades de interpolación de
-      cadenas de caracteres.
-    </p>
+    <h2>Funciones</h2>
     <script>
-      const nombre = "juan";
-      const trabajo = "desarrollador web";
-      console.log(`Nombre: ${nombre}, Trabajo: ${trabajo}`);
+      //Function Declaration
+      function saludar(nombre) {
+        console.log("bienvenido " + nombre);
+      }
+      saludar("juan");
+      //Function Expression
+      const cliente = function (nombreCliente) {
+        console.log("Mostrando datos del cliete: " + nombreCliente);
+      };
+      cliente("juan");
     </script>
   </body>
 </html>
