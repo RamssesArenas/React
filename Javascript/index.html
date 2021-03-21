@@ -26,15 +26,17 @@
   <body>
     <h1>Introducción / Recordatorio JavaScript</h1>
     <div id="app"></div>
-    <h2>Variable: Let</h2>
+    <h2>Template literals</h2>
     <p>
-      Una variable LET se le puede reasignar un valor pero esta no puede
-      reedeeclararse y su scope trabaja a nivel de bloque
+      Las plantillas literales son cadenas literales que habilitan el uso de
+      expresiones incrustadas. Con ellas, es posible utilizar cadenas de
+      caracteres de más de una línea, y funcionalidades de interpolación de
+      cadenas de caracteres.
     </p>
     <script>
-      let hola = "hola";
-      hola = true;
-      console.log(hola);
+      const nombre = "juan";
+      const trabajo = "desarrollador web";
+      console.log(`Nombre: ${nombre}, Trabajo: ${trabajo}`);
     </script>
   </body>
 </html>
