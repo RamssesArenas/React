@@ -28,30 +28,13 @@
     <div id="app"></div>
     <h2>Funciones</h2>
     <script>
-      //Funciones con Parametros
-      function actividad(
-        nombre = "Walter White",
-        actividad = "Enseñar Quimica"
-      ) {
-        console.log(
-          `La persona ${nombre}, esta realizando la actividad ${actividad}`
-        );
-      }
-
-      const actividad2 = function (
-        nombre = "Walter White",
-        actividad = "Enseñar Quimica"
-      ) {
-        console.log(
-          `La persona ${nombre}, esta realizando la actividad ${actividad}`
-        );
+      //Arrow Funcionn
+      let viajando = (destino, duracion) => {
+        return `viajando a la ciudad de: ${destino} por: ${duracion}`;
       };
-
-      actividad();
-      actividad("Ramsses", "Aprendiendo React");
-
-      actividad2("Ramsses", "Aprendiendo React");
-      actividad2();
+      let viaje;
+      viaje = viajando("paris", "3 dias");
+      console.log(viaje);
     </script>
   </body>
 </html>
