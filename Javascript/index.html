@@ -26,14 +26,14 @@
   <body>
     <h1>Introducción / Recordatorio JavaScript</h1>
     <div id="app"></div>
-    <h2>Variable: Const</h2>
+    <h2>Variable: Let</h2>
     <p>
-      A una variable CONST es necesario asignarle un valor, a esta no se le
-      puede reasignar un valor pero si puede ser modificado y su scope trabaja a
-      nivel de bloque
+      Una variable LET se le puede reasignar un valor pero esta no puede
+      reedeeclararse y su scope trabaja a nivel de bloque
     </p>
     <script>
-      const hola = "hola";
+      let hola = "hola";
+      hola = true;
       console.log(hola);
     </script>
   </body>
