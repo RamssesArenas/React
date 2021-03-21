@@ -11,10 +11,11 @@
         color: #1e2449;
       }
       h1 {
-        font-size: 3rem;
+        font-size: 2rem;
       }
       h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        color: #b1d1eb;
       }
       p {
         color: #f3f1ed;
@@ -25,14 +26,14 @@
   <body>
     <h1>Introducción / Recordatorio JavaScript</h1>
     <div id="app"></div>
-    <h2>Variable: Var</h2>
-    <p class="text">
-      Se debe de evitar el uso de var ya que esta forma de declarar variables,
-      permite ser modificado desde cualquier bloque, sin restriccion alguna por
-      que var tiene un scope global y local.
+    <h2>Variable: Const</h2>
+    <p>
+      A una variable CONST es necesario asignarle un valor, a esta no se le
+      puede reasignar un valor pero si puede ser modificado y su scope trabaja a
+      nivel de bloque
     </p>
     <script>
-      var hola = "hola";
+      const hola = "hola";
       console.log(hola);
     </script>
   </body>
