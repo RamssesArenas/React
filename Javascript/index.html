@@ -26,18 +26,27 @@
   <body>
     <h1>Introducción / Recordatorio JavaScript</h1>
     <div id="app"></div>
-    <h2>Object Literal</h2>
+    <h2>Object Constructor</h2>
     <script>
       //Objetos
-      //Object literal
+      //Object constructor
       const persona = {
         nombre: "juan",
         profesion: "desarrollador web",
         edad: 43,
       };
       console.log(persona);
-      console.log(persona.edad);
-      console.log(persona["nombre"]);
+      //Object Constructor
+      function tarea(nombre, urgencia) {
+        this.nombre = nombre;
+        this.urgencia = urgencia;
+      }
+      //Crear nueva tarea
+      const tarea1 = new tarea("aprender JavaScript y react", "urgente");
+      const tarea2 = new tarea("Pasear A perro", "media");
+
+      console.log(tarea1);
+      console.log(tarea2);
     </script>
   </body>
 </html>
