@@ -26,21 +26,31 @@
   <body>
     <h1>Introducción / Recordatorio JavaScript</h1>
     <div id="app"></div>
-    <h2>Spreed Operator</h2>
+    <h2>Metodos para arreglos</h2>
     <script>
-      //Spreed Operator
-      let lenguajes = ["JavaScript", "PHP", "Python"];
-      let frameworks = ["ReactJs", "Laravel", "Django"];
-      let combinacion = [...lenguajes, ...frameworks];
-      console.log(combinacion);
-
-      let [ultimo] = [...lenguajes].reverse();
-      console.log(ultimo);
-      function suma(a, b, c) {
-        console.log(a + b + c);
-      }
-      const numeros = [1, 2, 3];
-      suma(...numeros);
+      //Metodos en Arreglos
+      const personas = [
+        { nombre: "juan", edad: 23, aprendiendo: "javascript" },
+        { nombre: "Pablo", edad: 23, aprendiendo: "PHP" },
+        { nombre: "Alejandra", edad: 23, aprendiendo: "AdobeXD" },
+        { nombre: "Karen", edad: 29, aprendiendo: "ReactJS" },
+      ];
+      //Mayores de 28
+      console.log(personas);
+      const mayores = personas.filter((persona) => {
+        return persona.edad > 28;
+      });
+      console.log(mayores);
+      //Que aprende alejandra
+      const alejandra = personas.find((persona) => {
+        return persona.nombre === "Alejandra";
+      });
+      console.log(alejandra);
+      //Reduce
+      let total = personas.reduce((edadTotal, persona) => {
+        return edadTotal + persona.edad;
+      }, 0);
+      console.log(total);
     </script>
   </body>
 </html>
