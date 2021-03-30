@@ -26,18 +26,14 @@
   <body>
     <h1>Introducción / Recordatorio JavaScript</h1>
     <div id="app"></div>
-    <h2>Prototypes</h2>
+    <h2>Object Literal enhacement</h2>
     <script>
-      //Destructuring de objetos
-      const aprendiendoJS = {
-        version: {
-          nueva: "ES6",
-          anterior: "ES5",
-        },
-        fremeworks: ["react", "vuejs", "angulajs"],
-      };
-      let { anterior } = aprendiendoJS.version;
-      console.log(anterior);
+      const banda = "Metalica";
+      const genero = "Heavy Metal";
+      const canciones = ["Master of Puppets", "Seek & Destroy"];
+
+      const metallica = { banda, genero, canciones };
+      console.log(metallica);
     </script>
   </body>
 </html>
