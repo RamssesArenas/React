@@ -26,14 +26,23 @@
   <body>
     <h1>Introducción / Recordatorio JavaScript</h1>
     <div id="app"></div>
-    <h2>Object Literal enhacement</h2>
+    <h2>Funciones en un Objeto</h2>
     <script>
-      const banda = "Metalica";
-      const genero = "Heavy Metal";
-      const canciones = ["Master of Puppets", "Seek & Destroy"];
+      //Metodos en un objeto
 
-      const metallica = { banda, genero, canciones };
-      console.log(metallica);
+      const persona = {
+        nombre: "juan",
+        trabajo: "desarrollador web",
+        edad: 43,
+        musicaRock: true,
+        mostrarInformacion() {
+          console.log(
+            `${this.nombre} es ${this.trabajo} y su edad es ${this.edad}`
+          );
+        },
+      };
+
+      persona.mostrarInformacion();
     </script>
   </body>
 </html>
