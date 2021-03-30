@@ -26,23 +26,21 @@
   <body>
     <h1>Introducción / Recordatorio JavaScript</h1>
     <div id="app"></div>
-    <h2>Funciones en un Objeto</h2>
+    <h2>Spreed Operator</h2>
     <script>
-      //Metodos en un objeto
+      //Spreed Operator
+      let lenguajes = ["JavaScript", "PHP", "Python"];
+      let frameworks = ["ReactJs", "Laravel", "Django"];
+      let combinacion = [...lenguajes, ...frameworks];
+      console.log(combinacion);
 
-      const persona = {
-        nombre: "juan",
-        trabajo: "desarrollador web",
-        edad: 43,
-        musicaRock: true,
-        mostrarInformacion() {
-          console.log(
-            `${this.nombre} es ${this.trabajo} y su edad es ${this.edad}`
-          );
-        },
-      };
-
-      persona.mostrarInformacion();
+      let [ultimo] = [...lenguajes].reverse();
+      console.log(ultimo);
+      function suma(a, b, c) {
+        console.log(a + b + c);
+      }
+      const numeros = [1, 2, 3];
+      suma(...numeros);
     </script>
   </body>
 </html>
