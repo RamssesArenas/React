@@ -26,15 +26,18 @@
   <body>
     <h1>Introducción / Recordatorio JavaScript</h1>
     <div id="app"></div>
-    <h2>Funciones</h2>
+    <h2>Object Literal</h2>
     <script>
-      //Arrow Funcionn
-      let viajando = (destino, duracion) => {
-        return `viajando a la ciudad de: ${destino} por: ${duracion}`;
+      //Objetos
+      //Object literal
+      const persona = {
+        nombre: "juan",
+        profesion: "desarrollador web",
+        edad: 43,
       };
-      let viaje;
-      viaje = viajando("paris", "3 dias");
-      console.log(viaje);
+      console.log(persona);
+      console.log(persona.edad);
+      console.log(persona["nombre"]);
     </script>
   </body>
 </html>
