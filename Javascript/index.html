@@ -28,18 +28,16 @@
     <div id="app"></div>
     <h2>Prototypes</h2>
     <script>
-      //Object constructor
-      function Tarea(nombre, urgencia) {
-        this.nombre = nombre;
-        this.urgencia = urgencia;
-      }
-      //Agregar un prototype a tarea:
-      Tarea.prototype.mostrarInformacionTarea = function () {
-        return `la tarea ${this.nombre} tiene una prioridad de ${this.urgencia}`;
+      //Destructuring de objetos
+      const aprendiendoJS = {
+        version: {
+          nueva: "ES6",
+          anterior: "ES5",
+        },
+        fremeworks: ["react", "vuejs", "angulajs"],
       };
-      const tarea1 = new Tarea("Aprender JavaScript", "Urgente");
-      console.log(tarea1);
-      console.log(tarea1.mostrarInformacionTarea());
+      let { anterior } = aprendiendoJS.version;
+      console.log(anterior);
     </script>
   </body>
 </html>
