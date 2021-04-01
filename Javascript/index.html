@@ -26,28 +26,23 @@
   <body>
     <h1>Introducción / Recordatorio JavaScript</h1>
     <div id="app"></div>
-    <h2>Metodos para arreglos</h2>
+    <h2>POO en JavaScript</h2>
     <script>
-      //Promises
+      //POO en javascript
+      //Escribir Clases
+      class Tarea {
+        constructor(nombre, prioridad) {
+          this.nombre = nombre;
+          this.prioridad = prioridad;
+        }
+        mostrar() {
+          return `La tarea ${this.nombre} tiene una prioridad ${this.prioridad}`;
+        }
+      }
+      //Crear Objetos
+      let tarea1 = new Tarea("Aprender JavaScript", "Urgente");
 
-      const aplicarDescuento = new Promise((resolve, reject) => {
-        setTimeout(() => {
-          let descuento = true;
-
-          if (descuento) {
-            resolve("Descuento Activado");
-          } else {
-            reject("No se puedo aplicar el descuento");
-          }
-        }, 3000);
-      });
-      aplicarDescuento
-        .then((resultado) => {
-          console.log(resultado);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
+      console.log(tarea1.mostrar());
     </script>
   </body>
 </html>
